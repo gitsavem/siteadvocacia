@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form autocomplete="off">
-        <p><label for="nomec">Nome completo:</label> <input type="text" name="nomec" id="nomec"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <h1>Criar Cadastro</h1>
+    <form autocomplete="on" action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Dados Principais</legend>
+            <p><label for="nomeC">Nome completo:</label> <input type="text" name="nomeC" id="nomeC" required maxlength="50" placeholder="Digite seu nome aqui" size="32" autocomplete="name"></p>
+            <p><label for="email">Email:</label> <input type="email" name="ema" id="email" required placeholder="Digite um email válido" size="42" autocomplete="email"></p>
+            <p><label for="tel">Telefone:</label> <input type="tel" name="tel" id="tel" required placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$"></p>
+            <p><label for="senha">Senha:</label> <input type="password" name="sen" id="senha" required minlength="8" maxlength="16" placeholder="Digite a senha" size="42" autocomplete="new-password"></p>
+        </fieldset>
+        <a href="#">Pular</a>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>Estas informações não serão públicos, a menos que você permita.</p>
+            <p><label for="apelid">Apelido:</label> <input type="text" name="apelid" id="apelid"></p>
+            <p>Gênero</p>
+            <input type="radio" name="gen" id="genem"> <label for="geneo">Masculino</label>
+            <input type="radio" name="gen" id="geneo"> <label for="geneo">Outro</label> <br>
+            <input type="radio" name="gen" id="genef"> <label for="genef">Feminino</label><br><br>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP" selected>São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocatins</option>
+            </select>
+            <p>Bio</p>
+            <textarea name="bio" id="bio" cols="20" rows="7" placeholder="Digite sua Bio"></textarea>
+        </fieldset>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
     </form>
+    <a href="login.html">Já possui cadastro?</a>
 </body>
 </html>
