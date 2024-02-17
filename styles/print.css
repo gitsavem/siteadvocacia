@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+html{
+    font-size: 2em;
+}
+
+.junk{
+   display: none; 
+}
+
+body::after{
+    content: 'Não há o que mostrar na área de cadastro! Tente na tela de login';
+}

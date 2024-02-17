@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/print.css" media="print">
 </head>
 <body>
-    <h1>Criar Cadastro</h1>
-    <form autocomplete="on" action="cadastro.php" method="post">
+    <h1 class="junk">Criar Cadastro</h1>
+    <form class="junk" autocomplete="on" action="cadastro.php" method="post">
         <fieldset>
             <legend>Dados Principais</legend>
             <p><label for="nomeC">Nome completo:</label> <input type="text" name="nomeC" id="nomeC" required maxlength="50" placeholder="Digite seu nome aqui" size="32" autocomplete="name"></p>
@@ -95,6 +96,6 @@
         <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
     </form>
     
-    <a href="login.html">Já possui cadastro?</a>
+    <a href="login.html" class="junk">Já possui cadastro?</a>
 </body>
 </html>
