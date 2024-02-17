@@ -57,9 +57,44 @@
             </select>
             <p>Bio</p>
             <textarea name="bio" id="bio" cols="20" rows="7" placeholder="Digite sua Bio"></textarea>
+
+            <!--
+            <p>
+                <label for="taran">OI</label>
+                <input type="number" name="ta" id="taran" oninput="vam.innerHTML = Number(taran.value) + Number(taran2.value)">
+                
+            </p>
+            <p>
+                <label for="taran2">io</label>
+                <input type="number" name="tam" id="taran2" oninput="vam.innerHTML = Number(taran.value) + Number(taran2.value)">
+                
+            </p>
+            <p>
+                <label for="vam">valor</label>
+                <output name="vam" id="vam">number</output>
+            </p>
+
+
+                        <p>
+                <label for="date">Ano de nascimento</label>
+                <input type="number" name="date" id="date" min="1900" max="2024" oninput="calid()">
+                
+            </p>
+            <p>
+                <label for="vam">valor</label>
+                <output name="vam" id="vam">number</output>
+            </p>
+            <script>
+        function calid() {
+            let atual = new Date()Get,Full,Year
+            vam.innerHTML = Number(atual) - Number(date.value)
+        }
+    </script>
+             -->
         </fieldset>
         <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
     </form>
+    
     <a href="login.html">Já possui cadastro?</a>
 </body>
 </html>
