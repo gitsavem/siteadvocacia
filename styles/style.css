@@ -24,7 +24,7 @@ body{
 header{
     padding: 20px;
     background-color: var(--backgroundCustom); color: var(--textcolorReverse);
-    text-align: justify; 
+    text-align: center; 
     font-size: .8em;
 } header > h1{
     margin: 0px;
