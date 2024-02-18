@@ -30,7 +30,9 @@ header{
     margin: 0px;
     padding: 40px;
     text-align: center;
-    font-size: 4em;
+    font-size: 10vw;
+    background-size: auto;
+    text-decoration: line-through;
 }
 nav{
     padding: 10px;
